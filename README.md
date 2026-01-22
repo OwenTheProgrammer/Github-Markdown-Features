@@ -202,6 +202,24 @@ $$
 \textcolor[RGB]{40,89,120}{\sin(\theta)}
 $$
 
+For "absolute bars" and "vector length" I use `\textbar` to replace "|", and `\textbardbl` to replace "\|"
+
+$$
+\begin{gather*}
+	\text{absolute: } \textbar x \textbar \\
+	\text{length: } \textbardbl x \textbardbl
+\end{gather*}
+$$
+
+using the original characters would give you this lol
+
+$$
+\begin{gather*}
+	\text{absolute: } | x | \\
+	\text{length: } \| x \|
+\end{gather*}
+$$
+
 # Blocks
 
 > [!NOTE]
