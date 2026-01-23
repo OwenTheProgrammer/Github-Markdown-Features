@@ -220,6 +220,28 @@ $$
 \end{gather*}
 $$
 
+`\kern{#pt/em/px ...}` kern is a thing! you can do spacing!
+
+$$
+x \kern{16pt} y
+$$
+
+You can also replace `\langle` and `\rangle` with `\braket{}` or `\bra{}` and `\ket{}` if you only need those..
+
+$$
+\langle \hat{x}, \hat{x} \rangle \kern{5pt} \text{vs } \braket{ \hat{x}, \hat{x} }
+$$
+
+Tragically, `\cancel` doesnt work with KaTeX, but ive found a cursed way to "emulate" it
+
+`\mathrlap{\kern{5pt}\longrightarrow}{\cos}`
+`\mathrlap{\kern{5pt}\longrightarrow\longrightarrow}{\arccos}`
+
+$$
+\mathrlap{\kern{5pt}\longrightarrow}{\cos}
+\mathrlap{\kern{5pt}\longrightarrow\longrightarrow}{\arccos}
+$$
+
 # Blocks
 
 > [!NOTE]
